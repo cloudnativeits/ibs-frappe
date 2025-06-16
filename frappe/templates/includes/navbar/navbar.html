@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light navbar-expand-lg">
+<nav class="{% if path != '/login' %} d-none {% else %}navbar navbar-light navbar-expand-lg{% endif %}">
 	<div class="container">
 		<a class="navbar-brand" href="{{ url_prefix }}{{ home_page or "/" }}">
 			{%- if brand_html -%}
