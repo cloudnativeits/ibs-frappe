@@ -187,7 +187,7 @@ class LoginManager:
 				if default_workspace:
 					frappe.local.response["home_page"] = "/app/" + slug(default_workspace)
 				else:
-					frappe.local.response["home_page"] = get_default_path() or "/app"
+					frappe.local.response["home_page"] = "/app/modern-menu"
 
 		if not resume:
 			frappe.response["full_name"] = self.full_name
